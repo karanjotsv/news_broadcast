@@ -1,8 +1,6 @@
 import warnings
 warnings.filterwarnings('ignore')
 
-import config as cfg
-
 import os
 import json
 
