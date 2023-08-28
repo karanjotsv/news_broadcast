@@ -130,7 +130,7 @@ def extract_visual(path, skip=2):
     for i in df.index:
         x = {}
         for col in cols:  # parse string
-            x[col] = str(df[col][i]).split('    ')[-1].split("\n")[0] if len(str(df[col][i]).split('    ')) else str(df[col][i])
+            x[col] = str(round(df[col][i], 4)).split('    ')[-1].split("\n")[0] if len(str(df[col][i]).split('    ')) else str(round(df[col][i], 4))
 
         emotion.append(x)
 
