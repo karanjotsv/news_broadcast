@@ -148,5 +148,5 @@ dmypy.json
 .idea/
 
 **/data
-ryer/
-ucla_news/meta_climate.csv
+/gallina
+pynb/w5-6/meta_climate.csv

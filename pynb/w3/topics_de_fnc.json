@@ -1,0 +1,57 @@
+{
+    "hdbscan_phrase": [
+        "tonight hospital social",
+        "watch going ll",
+        "ban assault time",
+        "dangerous fear neo",
+        "npr radio public",
+        "trans community people",
+        "suicide ussie described",
+        "rar need 15",
+        "curious guns sound",
+        "party reason democratic",
+        "firearms american firearm",
+        "trans anti rhetoric",
+        "gun lot control"
+    ],
+    "hdbscan_sentence": [
+        "people want power",
+        "trans people guns",
+        "watch going ll",
+        "ussie npr person",
+        "don action free",
+        "ban time assault",
+        "dangerous selma alabama",
+        "rar 15 need",
+        "npr didn know"
+    ],
+    "hdbscan_5_chunk": [
+        "trans people npr",
+        "trans thing 15",
+        "want fear dangerous",
+        "ussie sheriff suicide",
+        "highest day literally",
+        "party democratic korean",
+        "alabama selma lgbtq",
+        "hampshire new care",
+        "npr segment national"
+    ],
+    "hdbscan_10_chunk": [
+        "curious lgbtq listening",
+        "party right people",
+        "trans people gun",
+        "npr know going",
+        "ussie sheriff hospital"
+    ],
+    "hdbscan_15_chunk": [
+        "right course don",
+        "guns gun people",
+        "npr ussie trans",
+        "lgbtq including people"
+    ],
+    "hdbscan_20_chunk": [
+        "people trans lgbtq",
+        "npr gun guns",
+        "firearms people trans"
+    ]
+}
