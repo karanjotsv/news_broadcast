@@ -1,0 +1,7 @@
+dataset,release,modalities,type,availability,access (raw videos),link
+Interactive Emotional Dyadic Motion Capture (IEMOCAP),2007,A-V-T,emotion with intensity,restricted,yes,https://sail.usc.edu/iemocap/
+Multimodal Opinion Sentiment and Emotion Intensity (CMU-MOSEI),2018,A-V-T,emotion with intensity,public,no,http://multicomp.cs.cmu.edu/resources/cmu-mosei-dataset/
+Multimodal Corpus of Sentiment Intensity (CMU-MOSI),2016,A-V-T,sentiment,public,yes,http://multicomp.cs.cmu.edu/resources/cmu-mosi-dataset/
+K-EmoCon,2020,A-V + sensor,emotion,restricted,yes,https://zenodo.org/record/3762962
+Ryerson Audio-Visual Database of Emotional Speech (RAVDESS),2018,A-V,emotion,public,yes,https://zenodo.org/record/1188976
+MSDD: A Multimodal Language Dateset for Stance Detection,2023,A-V-T,stance,restricted,no,
