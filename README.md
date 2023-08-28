@@ -21,6 +21,7 @@ pip install -r requirements.txt
 cd news_broadcast/src
 ```
 news_broadcast/news contains sample news stories on 'gun control', additional video files(MP4) to be added here
+
 6. run.py takes 1 argument i.e. file name of the input video in news_broadcast/news folder
 ```python
 python3 run.py -i de_fnc.mp4 
