@@ -18,7 +18,7 @@ from utils import *
 BASE_PATH = '/'.join(os.path.abspath('.').split('/')[ : -1])
 
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
-model = whisper.load_model('large').to(device)
+model = whisper.load_model('base').to(device)
 
 
 def exit_program():
@@ -28,7 +28,7 @@ def exit_program():
 
 def main(data, f_name):
     '''iterate transcript'''
-    for i, phrase in enumerate(data[ : 4]):
+    for i, phrase in enumerate(data):
         # get chunk
         command = f"ffmpeg -loglevel quiet -y -ss {str(phrase['start'])} -to {str(phrase['end'])} -i {os.path.join(BASE_PATH, 'news', f_name)} -c copy {os.path.join(BASE_PATH, 'src/i.mp4')}"
         subprocess.call(command, shell=True)
@@ -62,19 +62,20 @@ if __name__ == "__main__":
     args = parser.parse_args()
     
     if args.file_name:
-        print(f"loading video: {args.file_name}")
+        print(f"\nloading video: {args.file_name}")
 
         if args.file_name.split(".")[-1] != "mp4":
-            print("file format should be MP4")
+            print("\nfile format should be MP4")
             exit_program()
         
         # fetch transcription
-        print("fetching transcription .. ")
+        print("\nfetching transcription .. ")
         text = model.transcribe(os.path.join(BASE_PATH, "news", args.file_name), verbose=False)
 
-        print("parsing transcription .. ")
+        print("\nparsing transcription .. ")
         data = get_sentences(text["segments"])
 
-        print("iterating over chunks .. ")
+        print("\niterating over chunks .. ")
         main(data, args.file_name)
-    
+
+        print("\nready!")

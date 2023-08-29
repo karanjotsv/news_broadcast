@@ -1,0 +1,125 @@
+[
+    {
+        "text": "Kids are talking by the door.",
+        "start": 0.0,
+        "end": 3.0,
+        "words": [
+            "Kids",
+            "door",
+            "talking"
+        ],
+        "nouns": [],
+        "emotion": "angry",
+        "sequence": [
+            {
+                "anger": "0.0061",
+                "disgust": "0.0313",
+                "fear": "0.0123",
+                "happiness": "0.0323",
+                "sadness": "0.022",
+                "surprise": "0.0014",
+                "neutral": "0.8946"
+            },
+            {
+                "anger": "0.012",
+                "disgust": "0.0244",
+                "fear": "0.004",
+                "happiness": "0.0727",
+                "sadness": "0.0018",
+                "surprise": "0.0047",
+                "neutral": "0.8804"
+            },
+            {
+                "anger": "0.0703",
+                "disgust": "0.0058",
+                "fear": "0.0129",
+                "happiness": "0.015",
+                "sadness": "0.0021",
+                "surprise": "0.0621",
+                "neutral": "0.8318"
+            },
+            {
+                "anger": "0.0335",
+                "disgust": "0.0002",
+                "fear": "0.0075",
+                "happiness": "0.0068",
+                "sadness": "0.0006",
+                "surprise": "0.9013",
+                "neutral": "0.0502"
+            },
+            {
+                "anger": "0.1706",
+                "disgust": "0.0006",
+                "fear": "0.0253",
+                "happiness": "0.0242",
+                "sadness": "0.0015",
+                "surprise": "0.746",
+                "neutral": "0.0318"
+            },
+            {
+                "anger": "0.0401",
+                "disgust": "0.0771",
+                "fear": "0.054",
+                "happiness": "0.0122",
+                "sadness": "0.0186",
+                "surprise": "0.0399",
+                "neutral": "0.7581"
+            },
+            {
+                "anger": "0.0943",
+                "disgust": "0.0668",
+                "fear": "0.039",
+                "happiness": "0.076",
+                "sadness": "0.0048",
+                "surprise": "0.1137",
+                "neutral": "0.6054"
+            },
+            {
+                "anger": "0.7524",
+                "disgust": "0.0252",
+                "fear": "0.1666",
+                "happiness": "0.009",
+                "sadness": "0.0086",
+                "surprise": "0.0231",
+                "neutral": "0.0152"
+            },
+            {
+                "anger": "0.2784",
+                "disgust": "0.0138",
+                "fear": "0.0532",
+                "happiness": "0.0333",
+                "sadness": "0.0147",
+                "surprise": "0.2499",
+                "neutral": "0.3566"
+            },
+            {
+                "anger": "0.09",
+                "disgust": "0.0022",
+                "fear": "0.0048",
+                "happiness": "0.0261",
+                "sadness": "0.0132",
+                "surprise": "0.03",
+                "neutral": "0.8337"
+            },
+            {
+                "anger": "0.6913",
+                "disgust": "0.0013",
+                "fear": "0.0065",
+                "happiness": "0.0039",
+                "sadness": "0.002",
+                "surprise": "0.1799",
+                "neutral": "0.1151"
+            },
+            {
+                "anger": "0.1612",
+                "disgust": "0.0059",
+                "fear": "0.0245",
+                "happiness": "0.0463",
+                "sadness": "0.0056",
+                "surprise": "0.4146",
+                "neutral": "0.342"
+            }
+        ],
+        "stance": []
+    }
+]
