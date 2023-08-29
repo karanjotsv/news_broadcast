@@ -20,11 +20,14 @@ import yake
 import librosa
 
 
+BASE_PATH = '/'.join(os.path.abspath('.').split('/')[ : -1])
+
+
 # ------ LOAD ------
-with open("pynb/w9/svc.p", 'rb') as f:
+with open(os.path.join(BASE_PATH, "pynb/w9/svc.p"), 'rb') as f:
     svc = p.load(f)
 
-with open("pynb/w10-11/lr.p", 'rb') as f:
+with open(os.path.join(BASE_PATH, "pynb/w10-11/lr.p"), 'rb') as f:
     vectorizer, lr = p.load(f)
 
 

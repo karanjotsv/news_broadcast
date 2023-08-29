@@ -8,9 +8,10 @@ Summer of code '23 at Red Hen Lab. The work focuses on recognition of topics, em
 ```bash
 git clone https://github.com/karanjotsv/news_broadcast.git
 ```
-2. install ffmpeg(for ubuntu)
+2. install ffmpeg(for ubuntu) and whisper
 ```bash
 sudo apt install ffmpeg
+pip install -q git+https://github.com/openai/whisper.git
 ``` 
 3. install required python modules
 ```bash
