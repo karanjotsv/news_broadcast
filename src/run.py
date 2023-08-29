@@ -67,9 +67,12 @@ if __name__ == "__main__":
             exit_program()
         
         # fetch transcription
+        print("fetching transcription .. ")
         text = model.transcribe(os.path.join("news", args.file_name), verbose=False)
 
+        print("parsing transcription .. ")
         data = get_sentences(text["segments"])
 
+        print("iterating over chunks .. ")
         main(data)
     
