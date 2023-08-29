@@ -19,6 +19,5 @@ cfg.py
 __pycache__/
 *.py[cod]
 
-
 /gallina
 pynb/w5-6/meta_climate.csv

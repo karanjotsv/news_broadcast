@@ -15,8 +15,10 @@ import whisper
 from utils import *
 
 
-device = "cuda" if torch.cuda.is_available() else "cpu"
-model = whisper.load_model("large").to(device)
+BASE_PATH = '/'.join(os.path.abspath('.').split('/')[ : -1])
+
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
+model = whisper.load_model('large').to(device)
 
 
 def exit_program():
@@ -28,14 +30,14 @@ def main(data, f_name):
     '''iterate transcript'''
     for i, phrase in enumerate(data[ : 4]):
         # get chunk
-        command = f"ffmpeg -loglevel quiet -y -ss {str(phrase['start'])} -to {str(phrase['end'])} -i {f_name} -c copy ch.mp4"
+        command = f"ffmpeg -loglevel quiet -y -ss {str(phrase['start'])} -to {str(phrase['end'])} -i {os.path.join(BASE_PATH, 'news', f_name)} -c copy {os.path.join(BASE_PATH, 'src/i.mp4')}"
         subprocess.call(command, shell=True)
         
         # audio
-        ac_emo = extract_acoustic("ch.mp4")
+        ac_emo = extract_acoustic(os.path.join(BASE_PATH, "src/i.mp4"))
         
         # sequence over frames
-        vi_emo = extract_visual("ch.mp4", skip=8)
+        vi_emo = extract_visual(os.path.join(BASE_PATH, "src/i.mp4"), skip=8)
 
         data[i]["emotion"] = ac_emo
         
@@ -48,7 +50,7 @@ def main(data, f_name):
 
         data[i]["stance"] = stance
     
-    with open(f"news/json/{f_name.split()[0]}.json", 'w') as f:
+    with open(os.path.join(BASE_PATH, f"news/json/{f_name.split('.')[0]}.json"), 'w') as f:
         json.dump(data, f, indent=4)
     
     
@@ -68,11 +70,11 @@ if __name__ == "__main__":
         
         # fetch transcription
         print("fetching transcription .. ")
-        text = model.transcribe(os.path.join("news", args.file_name), verbose=False)
+        text = model.transcribe(os.path.join(BASE_PATH, "news", args.file_name), verbose=False)
 
         print("parsing transcription .. ")
         data = get_sentences(text["segments"])
 
         print("iterating over chunks .. ")
-        main(data)
+        main(data, args.file_name)
     
