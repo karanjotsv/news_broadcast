@@ -3,6 +3,8 @@ Summer of code '23 at Red Hen Lab. The work focuses on recognition of topics, em
 
 <b>Mentors:</b> Dr. Homa Hosseinmardi, Dr. Francis Steen
 
+[Blog](https://karanjotsinghv.notion.site/karanjotsinghv/Summer-of-Code-23-0e0582afd9294f379e3e4cc1d96b8085)
+
 #### steps to run:
 1. clone this repository to your local
 ```bash
