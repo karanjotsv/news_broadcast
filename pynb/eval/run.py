@@ -80,7 +80,7 @@ def text_embedding(text):  # list of sentences
         if np.all(text_embedding):
             text_embedding /= count
             
-            text_embedding += word_embedding
+            embedding += text_embedding
 
     return embedding
 
