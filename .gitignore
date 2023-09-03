@@ -20,4 +20,7 @@ __pycache__/
 *.py[cod]
 
 /gallina
-pynb/w5-6/meta_climate.csv
+.vector_cache
+*.npy
+**/feature
+*.csv

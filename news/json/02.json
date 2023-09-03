@@ -2,7 +2,7 @@
     {
         "text": "Kids are talking by the door.",
         "start": 0.0,
-        "end": 3.0,
+        "end": 4.0,
         "words": [
             "Kids",
             "door",
@@ -18,7 +18,7 @@
                 "happiness": "0.0323",
                 "sadness": "0.022",
                 "surprise": "0.0014",
-                "neutral": "0.8946"
+                "neutral": "0.8945"
             },
             {
                 "anger": "0.012",
@@ -27,7 +27,7 @@
                 "happiness": "0.0727",
                 "sadness": "0.0018",
                 "surprise": "0.0047",
-                "neutral": "0.8804"
+                "neutral": "0.8803"
             },
             {
                 "anger": "0.0703",
@@ -48,22 +48,22 @@
                 "neutral": "0.0502"
             },
             {
-                "anger": "0.1706",
+                "anger": "0.1707",
                 "disgust": "0.0006",
                 "fear": "0.0253",
                 "happiness": "0.0242",
                 "sadness": "0.0015",
-                "surprise": "0.746",
+                "surprise": "0.7459",
                 "neutral": "0.0318"
             },
             {
                 "anger": "0.0401",
-                "disgust": "0.0771",
+                "disgust": "0.077",
                 "fear": "0.054",
                 "happiness": "0.0122",
                 "sadness": "0.0186",
                 "surprise": "0.0399",
-                "neutral": "0.7581"
+                "neutral": "0.7582"
             },
             {
                 "anger": "0.0943",
@@ -102,7 +102,7 @@
                 "neutral": "0.8337"
             },
             {
-                "anger": "0.6913",
+                "anger": "0.6912",
                 "disgust": "0.0013",
                 "fear": "0.0065",
                 "happiness": "0.0039",
@@ -118,6 +118,33 @@
                 "sadness": "0.0056",
                 "surprise": "0.4146",
                 "neutral": "0.342"
+            },
+            {
+                "anger": "0.1678",
+                "disgust": "0.0062",
+                "fear": "0.0125",
+                "happiness": "0.0217",
+                "sadness": "0.0088",
+                "surprise": "0.0293",
+                "neutral": "0.7536"
+            },
+            {
+                "anger": "0.1666",
+                "disgust": "0.0052",
+                "fear": "0.0059",
+                "happiness": "0.0211",
+                "sadness": "0.0131",
+                "surprise": "0.0154",
+                "neutral": "0.7726"
+            },
+            {
+                "anger": "0.1071",
+                "disgust": "0.0014",
+                "fear": "0.0048",
+                "happiness": "0.0193",
+                "sadness": "0.0046",
+                "surprise": "0.0504",
+                "neutral": "0.8123"
             }
         ],
         "stance": []
